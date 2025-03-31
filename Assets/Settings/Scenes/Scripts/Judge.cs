@@ -21,7 +21,7 @@ public class Judge : MonoBehaviour
     {
         answerText = this.GetComponentInChildren<TextMeshProUGUI>();
         Debug.Log(answerText);
-        if (answerText.text == GameManager.questionArray[GameManager.currentQuestion, 5])
+        if (answerText.text == GameManager.csvQuestionDataShuffl[GameManager.currentQuestion].correctAnswer)
         {
             //〇を表示
             maruBatsuText.text = "Correct!";
