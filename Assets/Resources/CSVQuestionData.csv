@@ -1,0 +1,10 @@
+question,left,down,right,up,answer
+left,left,down,right,up,left
+down,left,down,right,up,down
+left,left,down,right,up,left
+up,left,down,right,up,up
+right,left,down,right,up,right
+left,left,down,right,up,left
+down,left,down,right,up,down
+down,left,down,right,up,down
+left,left,down,right,up,left
