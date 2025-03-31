@@ -1,4 +1,4 @@
-question,left,down,right,up,answer
+﻿question,answer1,answer2,answer3,answer4,correctAnswer
 left,left,down,right,up,left
 down,left,down,right,up,down
 left,left,down,right,up,left
