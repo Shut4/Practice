@@ -17,7 +17,7 @@ public class CSVReader : MonoBehaviour
         textasset = Resources.Load("CSV/CSVQuestionData", typeof(TextAsset)) as TextAsset;
         //　CSVSerializerを用いてcsvファイルを配列に流し込む。
         csvQuestionData = CSVSerializer.Deserialize<CSVQuestionData>(textasset.text);
-        Debug.Log(textasset);
+        // Debug.Log(textasset);
     }
 
 }
