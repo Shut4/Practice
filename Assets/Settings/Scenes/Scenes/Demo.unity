@@ -1813,15 +1813,10 @@ MonoBehaviour:
   answerText2: {fileID: 334386987}
   answerText3: {fileID: 1059704933}
   answerText4: {fileID: 1780653712}
-  answerBtn1: {fileID: 169619578}
-  answerBtn2: {fileID: 633890661}
-  answerBtn3: {fileID: 1833329379}
-  answerBtn4: {fileID: 843090455}
   MaruBatsu1: {fileID: 1870022522}
   MaruBatsu2: {fileID: 1763710367}
   MaruBatsu3: {fileID: 94317982}
   MaruBatsu4: {fileID: 200479364}
-  Next: {fileID: 1050571131}
 --- !u!1 &1059704931
 GameObject:
   m_ObjectHideFlags: 0

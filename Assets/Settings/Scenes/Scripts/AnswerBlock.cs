@@ -3,22 +3,23 @@ using TMPro;
 
 public class AnswerBlock : MonoBehaviour
 {
-    private TextMeshProUGUI portalText;
+    private Judge1 judge1;
+    private Portal portal;
+    private void Start()
+    {
+        judge1 = GetComponent<Judge1>();
+        portal = FindObjectOfType<Portal>();
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
-            TextMeshProUGUI portalText = other.GetComponentInChildren<TextMeshProUGUI>();
-            Debug.Log(other.name);
-            Judge1 judge1 = GetComponent<Judge1>();
-            judge1.answerText.text = portalText.text;
-
-            // AnswerBlockのテキストコンポーネントを取得
-            // TextMeshProUGUI answerText = GetComponentInChildren<TextMeshProUGUI>();
-
+            // Debug.Log("a");
+            judge1.answerText = other.GetComponentInChildren<TextMeshProUGUI>();
+            judge1.AnswerJudge();
+            portal.TriggerTeleport(GetComponent<Collider2D>());
             // 審判処理の呼び出し
-            // Judge1.Instance.SetAnswerText(answerText);
-            // Judge1.Instance.AnswerJudge();
+            // Judge.SetAnswerText(answerText.text);
         }
     }
 }

@@ -13,12 +13,8 @@ public class GameManager1 : MonoBehaviour
     CSVQuestionData[] csvQuestionData;
     public static CSVQuestionData[] csvQuestionDataShuffl;
     public static int currentQuestion = 0;
-    public TextMeshProUGUI maruBatsuText;
+    public GameObject MaruBatsu1, MaruBatsu2, MaruBatsu3, MaruBatsu4;
 
-    public static GameObject MaruBatsu1, MaruBatsu2, MaruBatsu3, MaruBatsu4;//, Next;
-    // [SerializeField]
-    // private Button answerBtn1, answerBtn2, answerBtn3, answerBtn4;
-    // Start is called before the first frame update
     void Start()
     {
         //　テキストファイルの読み込みを行ってくれるクラス
@@ -36,11 +32,6 @@ public class GameManager1 : MonoBehaviour
         answerText2.text = csvQuestionDataShuffl[currentQuestion].answer2;
         answerText3.text = csvQuestionDataShuffl[currentQuestion].answer3;
         answerText4.text = csvQuestionDataShuffl[currentQuestion].answer4;
-
-        // answerBtn1.onClick.AddListener(OnTriggerEnter2D_1);
-        // answerBtn2.onClick.AddListener(OnTriggerEnter2D_2);
-        // answerBtn3.onClick.AddListener(OnTriggerEnter2D_3);
-        // answerBtn4.onClick.AddListener(OnTriggerEnter2D_4);
     }
     public void NextQuestion()
     {

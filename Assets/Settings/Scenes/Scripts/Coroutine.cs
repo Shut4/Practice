@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+
 public class Coroutine : MonoBehaviour
 {
     void Awake()
@@ -6,10 +8,10 @@ public class Coroutine : MonoBehaviour
         StartCoroutine(Test());
     }
 
-    IEnumerator Test()
+    public IEnumerator Test()
     {
         // 1秒待機
-        yield reteurn new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1f);
         Debug.Log("1秒後にログ出力");
     }
 }
