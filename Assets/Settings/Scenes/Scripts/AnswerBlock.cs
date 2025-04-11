@@ -15,7 +15,7 @@ public class AnswerBlock : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             // Debug.Log("a");
-            judge1.answerText = other.GetComponentInChildren<TextMeshProUGUI>();
+            judge1.answerText = this.GetComponentInChildren<TextMeshProUGUI>();//めちゃ苦戦したとこ
             judge1.AnswerJudge();
             portal.TriggerTeleport(GetComponent<Collider2D>());
             // 審判処理の呼び出し

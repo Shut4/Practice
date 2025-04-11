@@ -20,9 +20,11 @@ public class Judge1 : MonoBehaviour
     }
     public void AnswerJudge()
     {
-        if (answerText.text == GameManager1.csvQuestionDataShuffl[GameManager1.currentQuestion].correctAnswer)
+        // Debug.Log(GameManager1.csvQuestionDataShuffl[GameManager1.currentQuestion].correctAnswer.ToString());
+        // Debug.Log(answerText.text);
+        if (answerText.text == GameManager1.csvQuestionDataShuffl[GameManager1.currentQuestion].correctAnswer.ToString())
         {
-            // Debug.Log(answerText);
+            // Debug.Log(answerText.text);
             gamemanager1.NextQuestion();
             portal.TriggerTeleport(GetComponent<Collider2D>());
         }
@@ -30,10 +32,10 @@ public class Judge1 : MonoBehaviour
         {
             maruBatsuText.text = "False..";
             maruBatsuText.color = new Color(0.0f, 0.0f, 255.0f, 0.8f);
-            gamemanager1.MaruBatsu1.SetActive(true);
-            gamemanager1.MaruBatsu2.SetActive(true);
-            gamemanager1.MaruBatsu3.SetActive(true);
-            gamemanager1.MaruBatsu4.SetActive(true);
+            // gamemanager1.MaruBatsu1.SetActive(true);
+            // gamemanager1.MaruBatsu2.SetActive(true);
+            // gamemanager1.MaruBatsu3.SetActive(true);
+            // gamemanager1.MaruBatsu4.SetActive(true);
             // coroutine.Test();
             portal.TriggerTeleport(GetComponent<Collider2D>());
             // gamemanager1.MaruBatsu1.SetActive(false);

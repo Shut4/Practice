@@ -12,7 +12,6 @@ public class Portal : MonoBehaviour
             collider.transform.position = new Vector2(destination.position.x, destination.position.y);
         }
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         TriggerTeleport(collision); // 既存の処理を再利用
