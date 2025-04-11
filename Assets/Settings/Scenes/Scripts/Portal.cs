@@ -6,12 +6,16 @@ public class Portal : MonoBehaviour
     private float distance = 0.3f;
 
     public void TriggerTeleport(Collider2D collider)
+{
+    if (collider.CompareTag("Player")) // プレイヤーのみを対象とする
     {
         if (Vector2.Distance(transform.position, collider.transform.position) > distance)
         {
-            collider.transform.position = new Vector2(destination.position.x, destination.position.y);
+            collider.transform.position = destination.position;
         }
     }
+}
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         TriggerTeleport(collision); // 既存の処理を再利用
