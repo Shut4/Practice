@@ -11,6 +11,7 @@ public class Judge1 : MonoBehaviour
     // private Coroutine coroutine;
     private Portal portal;
     public TextMeshProUGUI maruBatsuText;
+    public AudioSource audioSource;
 
     private void Start()
     {
@@ -32,6 +33,8 @@ public class Judge1 : MonoBehaviour
         {
             maruBatsuText.text = "False..";
             maruBatsuText.color = new Color(0.0f, 0.0f, 255.0f, 0.8f);
+            SoundManager.Instance.StopBGM(BGMSoundData.BGM.Title);
+            SoundManager.Instance.PlaySE(SESoundData.SE.Hoge);
             // gamemanager1.MaruBatsu1.SetActive(true);
             // gamemanager1.MaruBatsu2.SetActive(true);
             // gamemanager1.MaruBatsu3.SetActive(true);
