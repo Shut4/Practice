@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Settings/Scenes/Scenes/Room_Pre1.unity
     guid: 5a7374f8928f80948b3a0cf2e2155290
+  - enabled: 1
+    path: Assets/Settings/Scenes/Scenes/StageSelect.unity
+    guid: 677f01be03715994aad28964187b9954
+  - enabled: 1
+    path: Assets/Settings/Scenes/Scenes/Demo_1.unity
+    guid: 378802e95b37b08498e16fc18e2a6cf8
   m_configObjects: {}
