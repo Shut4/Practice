@@ -7,6 +7,6 @@ public class StartController : MonoBehaviour
 {
     public void SwitchScene()
     {
-        SceneManager.LoadScene("Room_Pre1", LoadSceneMode.Single);
+        SceneManager.LoadScene("Demo_1", LoadSceneMode.Single);
     }
 }
