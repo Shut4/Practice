@@ -1,10 +1,10 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class CharacterMove : MonoBehaviour
+public class dinosaur_move : MonoBehaviour
 {
   // あらかじめ Animator コンポーネントを持っておくようにする
-    private Animator _animator;
+    public Animator _animator;
     void Start()
     {
         // オブジェクトに紐付いている Animator を取得する
